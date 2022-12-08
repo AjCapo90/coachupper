@@ -1,0 +1,150 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >speed</mat-icon
+          >Dashboard
+        </div>
+      </a>
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >bolt</mat-icon
+          >Sessione
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >group</mat-icon
+          >Coachee
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >chat_bubble</mat-icon
+          >Messaggi
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >calendar_month</mat-icon
+          >
+          Appuntamenti
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >data_usage</mat-icon
+          >Assessment
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >folder</mat-icon
+          >File
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >menu_book</mat-icon
+          >Registri di Coaching
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >newspaper</mat-icon
+          >Riviste
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >diversity_3</mat-icon
+          >Impegni<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >report</mat-icon
+          >Indagini<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >contact_mail</mat-icon
+          >Contatti<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >live_help</mat-icon
+          >Domande<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >inventory_2</mat-icon
+          >Pacchetti<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >handshake</mat-icon
+          >Accordi<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >payments</mat-icon
+          >Fatture<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+      <a mat-list-item href="#">
+        <div class="nav-item">
+          <mat-icon aria-label="" class="material-symbols-outlined"
+            >star</mat-icon
+          >Feedback<mat-icon aria-label="lock">lock</mat-icon>
+        </div></a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>coachupper</span>
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

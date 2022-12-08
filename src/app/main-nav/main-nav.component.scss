@@ -1,0 +1,41 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+/*
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+*/
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.nav-item {
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nav-item mat-icon {
+  margin-right: 10px;
+}
+
+.nav-item mat-icon[aria-label="lock"] {
+  margin-left: 10px;
+}
+
+
