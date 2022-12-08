@@ -24,18 +24,11 @@
   'opsz' 48
 }
 
-.nav-item {
-  display: flex;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.nav-item mat-icon {
+mat-icon {
   margin-right: 10px;
-}
-
-.nav-item mat-icon[aria-label="lock"] {
-  margin-left: 10px;
+  &[aria-label="lock"] {
+    margin-left: auto;
+  }
 }
 
 
