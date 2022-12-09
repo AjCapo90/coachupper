@@ -16,19 +16,21 @@
   z-index: 1;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-
 mat-icon {
   margin-right: 10px;
   &[aria-label="lock"] {
     margin-left: auto;
   }
 }
+
+.logo {
+  width: 75px;
+}
+
+a {
+  margin-top: -13px;
+}
+
+
 
 

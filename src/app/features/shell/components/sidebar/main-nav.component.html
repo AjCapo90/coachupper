@@ -7,7 +7,8 @@
     [mode]="'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-toolbar> <span>theCoachUpper</span></mat-toolbar>
+    <coachupper-user-profile></coachupper-user-profile>
     <mat-nav-list>
       <a mat-list-item href="#">
         <mat-icon aria-label="" class="material-symbols-outlined"
@@ -96,7 +97,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar>
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -106,7 +107,10 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>coachupper</span>
+      <img
+        class="logo"
+        src="../../../../../assets/images/CoachUpper_logo_DEF_COLOR.png"
+      />
     </mat-toolbar>
     <ng-content></ng-content>
     <!-- Add Content Here -->
