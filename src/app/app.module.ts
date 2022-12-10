@@ -12,6 +12,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { UserProfileComponent } from './features/shell/components/user-profile/user-profile.component';
 import { DashboardComponent } from './features/shell/features/coachupper/dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { GridListComponent } from './features/shell/features/coachupper/grid-list/grid-list.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,7 @@ import { DashboardComponent } from './features/shell/features/coachupper/dashboa
     MainNavComponent,
     UserProfileComponent,
     DashboardComponent,
+    GridListComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +34,9 @@ import { DashboardComponent } from './features/shell/features/coachupper/dashboa
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
