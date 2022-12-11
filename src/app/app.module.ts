@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './features/shell/components/sidebar/main-nav.component';
@@ -16,6 +15,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { GridListComponent } from './features/shell/features/coachupper/grid-list/grid-list.component';
+import { CoachupperComponent } from './features/shell/containers/coachupper/coachupper.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,10 +25,12 @@ import { GridListComponent } from './features/shell/features/coachupper/grid-lis
     UserProfileComponent,
     DashboardComponent,
     GridListComponent,
+    CoachupperComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
